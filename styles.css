@@ -1,0 +1,39 @@
+body,
+html {
+  /* background-color: #e7717d;  */
+  background-image: linear-gradient(to bottom right, #afd275, #e7717d 45%);
+  height: 100%;
+  display: inline-block;
+}
+h1 {
+  color: #c2cad0;
+  font-family: "Playfair Display", "Times New Roman";
+  font-size: 500% !important;
+  padding-left: 10%;
+}
+h2 {
+  color: #c2cad0;
+  font-family: "Raleway", "Times New Roman";
+  font-size: 200%;
+  padding-left: 6%;
+}
+p {
+  color: #c2cad0;
+  font-family: "Roboto Slab", "Times New Roman";
+  font-size: 100%;
+  padding-left: 6%;
+  padding-right: 35%;
+}
+a {
+  color: #7e685a !important;
+  font-family: "Goudy Bookletter 1911", "Times New Roman";
+  font-size: 100%;
+  text-decoration: none;
+}
+a:hover {
+  color: #c2cad0 !important;
+}
+.page-links {
+  padding-left: 5%;
+  padding-top: 5%;
+}
