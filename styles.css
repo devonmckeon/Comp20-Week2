@@ -1,9 +1,21 @@
 body,
 html {
   /* background-color: #e7717d;  */
-  background-image: linear-gradient(to bottom right, #afd275, #e7717d 45%);
-  height: 100%;
+  background-image: linear-gradient(
+    to bottom right,
+    #fc596a 0%,
+    #e7717d 30%,
+    #afd275 95%
+  );
+  padding: 0;
+  margin: 0;
   display: inline-block;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
 }
 h1 {
   color: #c2cad0;
