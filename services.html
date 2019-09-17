@@ -3,13 +3,68 @@
   <head>
     <title>Services</title>
     <style type="text/css">
+      body {
+        background-image: url("wheel1.jpg") !important;
+        background-size: cover;
+      }
       div {
-        color: #e3e2df;
-        font-family: "Goudy Bookletter 1911", "Times New Roman";
+        color: #05292f !important;
+        font-family: "Trebuchet MS";
         font-size: 100%;
       }
+      h1 {
+        color: rgba(204, 204, 204, 0.67) !important;
+      }
+      h2 {
+        color: #cb2d6f !important;
+        background-color: rgba(204, 204, 204, 0.67) !important;
+        width: 100% !important;
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+        /* padding-right: 10% !important; */
+      }
+      h2.blue {
+        color: #0f7b75 !important;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        padding-right: 10% !important;
+      }
       form {
-        padding-left: 6%;
+        padding-left: 0;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: rgba(204, 204, 204, 0.67);
+      }
+      input {
+        background-color: #cccccc;
+      }
+      .row {
+        padding-top: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100% !important;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        padding-left: 5%;
+      }
+      .column.left {
+        flex: 0.55;
+        text-align: center;
+      }
+      .column.right {
+        flex: 0.45;
+      }
+      .bottom {
+        background-color: rgba(204, 204, 204, 0.67);
+        color: #cb2d6f !important;
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
       }
     </style>
     <link
@@ -21,173 +76,201 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <span class="page-links">
+    <div class="page-links">
       <a href="index.html" class="btn btn-default" title="Visit Home Page"
-        >Home</a
+        ><b>Home</b></a
       >
       <a href="services.html" class="btn btn-default" title="Visit Our Services"
-        >Services</a
+        ><b>Services</b></a
       >
       <a href="contact.html" class="btn btn-default" title="Visit Contact Us"
-        >Contact Us</a
+        ><b>Contact Us</b></a
       >
-    </span>
+    </div>
     <h1>Our Services</h1>
-    <p>
-      ClinicCar is an organization created and run by volunteers. When you sign
-      up below, you will be matched with a volunteer who will drive you safely
-      to and from the clinic of your choice, and escort you into and out of the
-      building. Our fully background-checked drivers are volunteers, so nothing
-      will come out of your pocket! We just want to make your visit to the
-      clinic as smooth and stress-free as possible!
-    </p>
-    <form method="get">
-      <div class="col1">Name:</div>
-      <div class="col2">
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="your preferred name"
-        />
-      </div>
-      <br />
-      <div class="col1">Phone:</div>
-      <div class="col2">
-        <input type="text" name="phone" id="phone" placeholder="xxx-xxx-xxxx" />
-      </div>
-      <br />
-      <div class="col1">Email:</div>
-      <div class="col2">
-        <input
-          type="text"
-          name="email"
-          id="email"
-          placeholder="myemail@website.com"
-        />
-      </div>
-      <br />
-      <div class="col1">Preferred Contact:</div>
-      <div class="col2">
-        <input
-          type="radio"
-          name="preferred-contact"
-          class="preferred-contact"
-          value="email"
-        />Email &nbsp&nbsp&nbsp<input
-          type="radio"
-          name="preferred-contact"
-          class="preferred-contact"
-          value="text"
-        />Text
-      </div>
+    <h2>
+      <b>ClinicCar</b> is an organization created and run entirely by
+      <b>volunteers</b>.
+    </h2>
+    <h3><b>Sign Up Here</b></h3>
+    <div class="row">
+      <div class="column left">
+        <form method="get">
+          <div class="col1"><b>Name:</b></div>
+          <div class="col2">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="your preferred name"
+            />
+          </div>
+          <br />
+          <div class="col1"><b>Phone:</b></div>
+          <div class="col2">
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="xxx-xxx-xxxx"
+            />
+          </div>
+          <br />
+          <div class="col1"><b>Email:</b></div>
+          <div class="col2">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="myemail@website.com"
+            />
+          </div>
+          <br />
+          <div class="col1"><b>Preferred Contact:</b></div>
+          <div class="col2">
+            <input
+              type="radio"
+              name="preferred-contact"
+              class="preferred-contact"
+              value="email"
+            />Email &nbsp&nbsp&nbsp<input
+              type="radio"
+              name="preferred-contact"
+              class="preferred-contact"
+              value="text"
+            />Text
+          </div>
 
-      <br />
-      <div class="col1">Your Clinic:</div>
-      <div class="col2">
-        <input
-          type="text"
-          name="clinic"
-          id="clinic"
-          placeholder="name of clinic"
-        />
+          <br />
+          <div class="col1"><b>Your Clinic:</b></div>
+          <div class="col2">
+            <input
+              type="text"
+              name="clinic"
+              id="clinic"
+              placeholder="name of clinic"
+            />
+          </div>
+          <br />
+          <div class="col1"><b>Clinic Address:</b></div>
+          <div class="col2">
+            <input
+              type="text"
+              name="clinic-street-address"
+              id="clinic-street-address"
+              placeholder="street address"
+            />
+            <input
+              type="text"
+              name="clinic-city"
+              id="clinic-city"
+              placeholder="city"
+            />
+            <input
+              type="text"
+              name="clinic-zip"
+              id="clinic-zip"
+              placeholder="zip code"
+            />
+          </div>
+          <br />
+          <div class="col1"><b>Your Address:</b></div>
+          <div class="col2">
+            <input
+              type="text"
+              name="street-address"
+              id="street-address"
+              placeholder="street address"
+            />
+            <input type="text" name="city" id="city" placeholder="city" />
+            <input type="text" name="zip" id="zip" placeholder="zip code" />
+          </div>
+          <br />
+          <div class="col1">
+            <b>How many passengers (including you) will we be picking up?</b>
+            <div class="col2">
+              <select
+                name="passengers"
+                id="passengers"
+                size="3"
+                style="background-color:#cccccc;color:#7e685a !important;"
+              >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+              </select>
+            </div>
+          </div>
+          <br />
+          <div class="col1">
+            <b>Do any of the passengers require car seats?</b>
+          </div>
+          <div class="col2">
+            <input
+              type="radio"
+              name="carseats"
+              class="carseats"
+              value="yes"
+            />Yes &nbsp&nbsp&nbsp<input
+              type="radio"
+              name="carseats"
+              class="carseats"
+              value="no"
+            />No
+          </div>
+          <br />
+          <div class="col1">
+            <b>How many car seats would you like us to provide?</b>
+            <div class="col2">
+              <select
+                name="num-carseats"
+                id="num-carseats"
+                size="3"
+                style="background-color:#cccccc;color:#7e685a !important;"
+              >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+          </div>
+          <br />
+          <div>
+            <input
+              type="submit"
+              id="submit"
+              class="btn btn-info"
+              value="Submit"
+              style="background-color:#cccccc !important; color: #05292f !important;"
+            />
+          </div>
+        </form>
+        <br />
+        <p class="bottom">
+          Thank you for signing up with ClinicCar! We will email/text you
+          shortly with details about your trip!
+        </p>
       </div>
-      <br />
-      <div class="col1">Clinic Address:</div>
-      <div class="col2">
-        <input
-          type="text"
-          name="clinic-street-address"
-          id="clinic-street-address"
-          placeholder="street address"
-        />
-        <input
-          type="text"
-          name="clinic-city"
-          id="clinic-city"
-          placeholder="city"
-        />
-        <input
-          type="text"
-          name="clinic-zip"
-          id="clinic-zip"
-          placeholder="zip code"
-        />
+      <div class="column right">
+        <br />
+        <p>
+          When you sign up here, you will be matched with a volunteer who will
+          drive you safely to and from the clinic of your choice, and
+          <b>escort you</b> into and out of the building. Our fully
+          <b>background-checked</b> drivers are volunteers, so nothing will come
+          out of your pocket!
+        </p>
+        <br />
+        <br />
+        <h2 class="blue">
+          We want to make your visit to the clinic as smooth and stress-free as
+          possible!
+        </h2>
       </div>
-      <br />
-      <div class="col1">Your Address:</div>
-      <div class="col2">
-        <input
-          type="text"
-          name="street-address"
-          id="street-address"
-          placeholder="street address"
-        />
-        <input type="text" name="city" id="city" placeholder="city" />
-        <input type="text" name="zip" id="zip" placeholder="zip code" />
-      </div>
-      <br />
-      <div class="col1">
-        How many passengers (including you) will we be picking up?
-        <div class="col2">
-          <select
-            name="passengers"
-            id="passengers"
-            size="3"
-            style="color:#7e685a !important;"
-          >
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-          </select>
-        </div>
-      </div>
-      <br />
-      <div class="col1">Do any of the passengers require car seats?</div>
-      <div class="col2">
-        <input type="radio" name="carseats" class="carseats" value="yes" />Yes
-        &nbsp&nbsp&nbsp<input
-          type="radio"
-          name="carseats"
-          class="carseats"
-          value="no"
-        />No
-      </div>
-      <br />
-      <div class="col1">
-        How many car seats would you like us to provide?
-        <div class="col2">
-          <select
-            name="num-carseats"
-            id="num-carseats"
-            size="3"
-            style="color:#7e685a !important;"
-          >
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
-        </div>
-      </div>
-      <br />
-      <div>
-        <input
-          type="submit"
-          id="submit"
-          class="btn btn-info"
-          value="Submit"
-          style="background-color:rgb(255, 255, 255) !important; color:#7e685a !important;"
-        />
-      </div>
-    </form>
-
-    <p>
-      Thank you for signing up with ClinicCar! We will email/text you shortly
-      with details about your trip!
-    </p>
+    </div>
   </body>
 </html>
